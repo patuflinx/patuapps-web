@@ -69,7 +69,8 @@
     }, 300);
   }
 
-  tabs.forEach((t) => t.addEventListener("click", () => { clearInterval(timer); show(t.dataset.lang); }));
+  let stopped = false;
+  tabs.forEach((t) => t.addEventListener("click", () => { stopped = true; clearInterval(timer); show(t.dataset.lang); }));
 
   // Rotación automática mientras la sección está a la vista (se detiene al tocar un idioma).
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -78,7 +79,7 @@
     let started = false;
     new IntersectionObserver((entries) => {
       entries.forEach((e) => {
-        if (e.isIntersecting && !started) {
+        if (e.isIntersecting && !started && !stopped) {
           started = true;
           timer = setInterval(() => show(order[(order.indexOf(current) + 1) % order.length]), 2600);
         }
