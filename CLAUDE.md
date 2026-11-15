@@ -4,7 +4,7 @@ Web promocional de **PatuApps**, el estudio de apps de Christian. Presenta el es
 KeBuy fue la primera. Llegarán más, y casi siempre se trabajará en esta web **desde el proyecto de otra app**.
 Esta guía es para poder ampliarla sin contexto previo.
 
-- Repositorio: GitHub `patuapps-web` (rama `main`).
+- Repositorio: https://github.com/patuflinx/patuapps-web (público, rama `main`). En este Mac, `gh` está en `~/.local/bin/gh` con sesión iniciada.
 - Carpeta local: `~/Library/Mobile Documents/com~apple~CloudDocs/Claude/PatuApps-web`.
 - Idioma de la web: español.
 - Tecnología: HTML, CSS y JS estáticos. No hay dependencias, `npm` ni paso de compilación.
