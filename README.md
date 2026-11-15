@@ -1,6 +1,6 @@
 # Web de PatuApps
 
-Web estática (HTML, CSS y JS sin dependencias). Se puede subir tal cual a cualquier alojamiento estático: GitHub Pages, Netlify, Cloudflare Pages o el hosting del dominio.
+Web estática (HTML, CSS y JS sin dependencias), publicada con GitHub Pages en https://patuflinx.github.io/patuapps-web/. Se puede subir tal cual a cualquier alojamiento estático: GitHub Pages, Netlify, Cloudflare Pages o el hosting del dominio.
 
 ## Estructura
 
@@ -23,8 +23,8 @@ kebuy/                  Página de KeBuy
 1. En `assets/js/apps.js`, cambia `contactEmail` por el correo de soporte real.
 2. Cuando KeBuy esté en el App Store, pon su enlace en `appStoreUrl` y cambia `status` a `"live"`. Los botones pasarán a «Descárgala en el App Store».
 3. En App Store Connect usa:
-   - URL de privacidad: `https://TU-DOMINIO/kebuy/privacidad.html`
-   - URL de soporte: `https://TU-DOMINIO/kebuy/soporte.html`
+   - URL de privacidad: `https://patuflinx.github.io/patuapps-web/kebuy/privacidad.html`
+   - URL de soporte: `https://patuflinx.github.io/patuapps-web/kebuy/soporte.html`
 
 ## Añadir una app nueva
 

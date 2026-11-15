@@ -6,6 +6,7 @@ Esta guía es para poder ampliarla sin contexto previo.
 
 - Repositorio: https://github.com/patuflinx/patuapps-web (público, rama `main`). En este Mac, `gh` está en `~/.local/bin/gh` con sesión iniciada.
 - Carpeta local: `~/Library/Mobile Documents/com~apple~CloudDocs/Claude/PatuApps-web`.
+- Publicada con GitHub Pages en https://patuflinx.github.io/patuapps-web/. Cada `git push` a `main` la actualiza en uno o dos minutos.
 - Idioma de la web: español.
 - Tecnología: HTML, CSS y JS estáticos. No hay dependencias, `npm` ni paso de compilación.
 - Proyecto de KeBuy (la app): `../KeBuy`.
@@ -82,7 +83,8 @@ Abre http://localhost:8765 y revisa el resultado a 1280 px y a 390 px de ancho.
 ## Pendiente
 
 - `contactEmail` sigue siendo provisional (`hola@patuapps.com`) hasta tener un correo real.
-- Falta alojamiento y dominio. La idea es GitHub Pages o Cloudflare Pages, publicando desde `main`.
-  Con la web publicada:
-  - URL de privacidad de cada app: `https://DOMINIO/<id>/privacidad.html`
-  - URL de soporte: `https://DOMINIO/<id>/soporte.html`
+- Dominio propio: pendiente. Se configura en GitHub, en Settings → Pages → Custom domain, más un CNAME en el DNS. Al cambiarlo, actualiza las URL de App Store Connect.
+- URL actuales para App Store Connect:
+  - Privacidad de KeBuy: https://patuflinx.github.io/patuapps-web/kebuy/privacidad.html
+  - Soporte de KeBuy: https://patuflinx.github.io/patuapps-web/kebuy/soporte.html
+  - En general: `https://patuflinx.github.io/patuapps-web/<id>/privacidad.html` y `…/<id>/soporte.html`.
