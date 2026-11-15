@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="es" data-root="../" data-app="miabono">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mi Abono · Los abonos de la familia, bien repartidos</title>
+  <meta name="description" content="Mi Abono organiza los abonos de temporada de la familia: quién va a cada partido, turnos justos para el abono compartido, calendario, tiempo en el estadio y estadísticas.">
+  <meta property="og:title" content="Mi Abono · Tu abono, bien repartido">
+  <meta property="og:description" content="Quién va a cada partido, turnos del abono compartido y todo lo vivido en el estadio.">
+  <meta property="og:image" content="img/miabono-icon.png">
+  <meta name="theme-color" content="#2B53C9">
+  <link rel="icon" href="img/miabono-icon.png">
+  <link rel="apple-touch-icon" href="img/miabono-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="miabono.css">
+</head>
+<body>
+  <header data-site-header data-links='<a class="nav-hide" href="#funciones">Funciones</a><a class="nav-hide" href="#turnos">Turnos</a><a class="nav-hide" href="#privacidad">Privacidad</a>'></header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="ma-hero">
+      <div class="blob b1" aria-hidden="true"></div>
+      <div class="blob b2" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="ma-hero-copy">
+          <div class="app-id reveal">
+            <img src="img/miabono-icon.png" alt="" width="64" height="64">
+            <div><strong>Mi Abono</strong><span>Para iPhone</span></div>
+          </div>
+          <h1 class="reveal d1">Tu abono,<br><span class="hl">bien repartido.</span></h1>
+          <p class="lead reveal d2">Los abonos de temporada de la familia, organizados: quién va a cada partido, turnos justos para el abono compartido y todo lo que habéis vivido en el estadio.</p>
+          <div class="ctas reveal d3">
+            <span class="store-badge private" aria-label="App de uso privado">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5Zm-3 5a3 3 0 1 1 6 0v3H9V7Z"/></svg>
+              <span><small>De momento</small><strong>Uso privado</strong></span>
+            </span>
+            <a class="btn ghost" href="#funciones">Ver cómo funciona</a>
+          </div>
+          <ul class="mini-proof reveal d3">
+            <li><b>3</b> abonos, un calendario</li>
+            <li><b>2</b> familias al día</li>
+            <li><b>0</b> anuncios</li>
+          </ul>
+        </div>
+
+        <div class="ma-hero-art" aria-hidden="true">
+          <div class="phone p-back reveal d1" style="--w: clamp(200px, 24vw, 280px)"><img src="img/screens/calendario.jpg" alt=""></div>
+          <div class="phone p-front reveal d2" style="--w: clamp(220px, 27vw, 310px)"><img src="img/screens/home.jpg" alt=""></div>
+          <span class="flt" style="--x:-4%;--y:6%;--s:78px;--r:-12deg">⚽️</span>
+          <span class="flt" style="--x:88%;--y:2%;--s:66px;--r:10deg;animation-delay:-2s">🎟️</span>
+          <span class="flt" style="--x:92%;--y:52%;--s:70px;--r:-6deg;animation-delay:-4s">☀️</span>
+          <span class="flt" style="--x:-8%;--y:64%;--s:76px;--r:8deg;animation-delay:-1s">🏆</span>
+          <div class="toast t1"><span class="av" style="background:#d6365a">J</span><span><b>Jordi</b> ha asignado <b>18 partidos</b> del abono compartido</span></div>
+          <div class="toast t2"><span class="ok">✓</span><span>Asistencia solicitada para el <b>domingo</b></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CINTA ============ -->
+    <section class="ribbon" aria-label="Algunas cosas que hace Mi Abono">
+      <div class="track" data-ribbon="0"></div>
+      <div class="track rev" data-ribbon="1"></div>
+    </section>
+
+    <!-- ============ FUNCIONES ============ -->
+    <section class="section" id="funciones">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow reveal">Funciones</span>
+          <h2 class="reveal d1">Se acabó el «¿a quién le toca?». <span class="muted">Y el grupo de WhatsApp lleno de dudas.</span></h2>
+        </div>
+
+        <div class="bento">
+          <article class="tile t-next reveal">
+            <div class="copy">
+              <span class="tag">🎟️ Siguiente partido</span>
+              <h3>Quién va, de un vistazo</h3>
+              <p>Cada abono con quién lo usa, su asiento en el plano del estadio y qué partido de la temporada será para cada uno. Si algo falta por decidir, te lo dice.</p>
+            </div>
+            <div class="shot"><div class="phone" style="--w: 250px"><img src="img/screens/home.jpg" alt="Pantalla principal con el siguiente partido en casa y quién va con cada abono" loading="lazy"></div></div>
+          </article>
+
+          <article class="tile t-turnos reveal d1" id="turnos">
+            <div class="copy">
+              <span class="tag">⚖️ Turnos justos</span>
+              <h3>El abono compartido, por turnos</h3>
+              <p>Semana par o impar para la liga, martes o miércoles para la Champions. Ves la propuesta antes de aplicarla y puedes ajustarla a mano.</p>
+            </div>
+            <div class="shot crop"><img src="img/screens/turnos.jpg" alt="Vista previa de la asignación de turnos del abono compartido" loading="lazy"></div>
+          </article>
+
+          <article class="tile t-cal reveal">
+            <div class="copy">
+              <span class="tag">📅 Calendario</span>
+              <h3>Toda la temporada en un mes</h3>
+              <p>Rival, competición y quién va en cada día. Los partidos fuera, también.</p>
+            </div>
+            <div class="shot crop"><img src="img/screens/calendario.jpg" alt="Calendario mensual con los partidos de la temporada" loading="lazy"></div>
+          </article>
+
+          <article class="tile t-tiempo reveal d1">
+            <div class="copy">
+              <span class="tag">🌦️ Tiempo</span>
+              <h3>¿Paraguas o gorra?</h3>
+              <p>Previsión hora a hora en el estadio y radar de lluvia el mismo día.</p>
+            </div>
+            <div class="wx" aria-hidden="true">
+              <div><small>20:00</small><i>☀️</i><b>17°</b><em>0 %</em></div>
+              <div><small>21:00</small><i>🌤️</i><b>16°</b><em>5 %</em></div>
+              <div><small>22:00</small><i>☁️</i><b>15°</b><em>20 %</em></div>
+              <div><small>23:00</small><i>🌧️</i><b>14°</b><em>60 %</em></div>
+            </div>
+          </article>
+
+          <article class="tile t-stats reveal d2">
+            <div class="copy">
+              <span class="tag">🏆 Totales</span>
+              <h3>Quién va más… y quién trae suerte</h3>
+              <p>Asistencia por persona y por familia, resultados vistos, goleadores y el talismán de la temporada.</p>
+            </div>
+            <div class="shot crop"><img src="img/screens/totales.jpg" alt="Estadísticas de asistencia y talismán de la temporada" loading="lazy"></div>
+          </article>
+
+          <article class="tile t-sync reveal">
+            <div class="copy">
+              <span class="tag">👨‍👩‍👧‍👦 En familia</span>
+              <h3>Las dos familias, siempre al día</h3>
+              <p>Compartid los datos por iCloud con una invitación. Cuando el otro cambia un turno, cede un abono o solicita la asistencia, te llega un aviso. Lo tuyo no te lo avisa.</p>
+            </div>
+            <div class="notes" aria-hidden="true">
+              <div class="note"><span class="ic">⚖️</span><span><b>Cambio de turno</b>Domingo: el abono compartido pasa a Pol y Nil.</span></div>
+              <div class="note"><span class="ic">✉️</span><span><b>Asistencia solicitada</b>Marc la ha solicitado para el próximo partido.</span></div>
+              <div class="note"><span class="ic">💺</span><span><b>Abono libre</b>Un abono queda sin usar. ¿Alguien se apunta?</span></div>
+            </div>
+          </article>
+
+          <article class="tile t-match reveal d1">
+            <div class="copy">
+              <span class="tag">🔥 Día de partido</span>
+              <h3>Del sofá a la grada</h3>
+              <p>Cuenta atrás, cómo llegar y el marcador en directo en la pantalla bloqueada. Con widget y Siri: «¿A quién le toca?».</p>
+            </div>
+            <div class="score" aria-hidden="true">
+              <span class="team home"></span>
+              <div><b>2 – 1</b><small>67'</small></div>
+              <span class="team away"></span>
+            </div>
+          </article>
+
+          <article class="tile t-season reveal">
+            <div class="copy">
+              <span class="tag">📸 Para compartir</span>
+              <h3>Vuestro año en el estadio</h3>
+              <p>Un resumen de temporada para mandar al grupo: quién más ha ido, el talismán, la mejor victoria. Y los próximos partidos como imagen, texto, calendario o PDF.</p>
+            </div>
+            <div class="duo">
+              <div class="phone" style="--w: 200px"><img src="img/screens/resumen.jpg" alt="Resumen de la temporada para compartir" loading="lazy"></div>
+              <div class="phone" style="--w: 200px"><img src="img/screens/partido.jpg" alt="Ficha de un partido con el tiempo y los abonos" loading="lazy"></div>
+            </div>
+          </article>
+
+          <article class="tile t-auto reveal d1">
+            <div class="copy">
+              <span class="tag">🔄 Automática</span>
+              <h3>Se actualiza sola</h3>
+              <p>Partidos, horarios, resultados, goleadores y televisión llegan solos. Si cambia una fecha, te avisa.</p>
+            </div>
+            <div class="refresh" aria-hidden="true"><i>↻</i></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO FUNCIONA ============ -->
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head center">
+          <span class="eyebrow reveal">Cómo funciona</span>
+          <h2 class="reveal d1">Tres pasos y al estadio.</h2>
+        </div>
+        <ol class="steps">
+          <li class="reveal"><span class="n">1</span><span class="emo">💺</span><h3>Coloca tus abonos</h3><p>Zona, fila y asiento de cada abono, señalados en el plano del estadio.</p></li>
+          <li class="reveal d1"><span class="n">2</span><span class="emo">⚖️</span><h3>Reparte los turnos</h3><p>Genera la asignación de la temporada y ajusta a mano lo que haga falta.</p></li>
+          <li class="reveal d2"><span class="n">3</span><span class="emo">🎉</span><h3>Disfruta del partido</h3><p>Marca quién va, solicita la asistencia y deja que la app lleve la cuenta.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PRIVACIDAD ============ -->
+    <section class="section" id="privacidad" style="padding-top:0">
+      <div class="wrap">
+        <div class="priv reveal">
+          <div>
+            <span class="eyebrow on-dark">Privacidad</span>
+            <h2>Lo de casa, en casa.</h2>
+            <p>Mi Abono no tiene servidores propios, ni cuentas, ni anuncios. Tus datos viven en tu iPhone y, si lo activas, en tu iCloud.</p>
+            <a class="btn" href="privacidad.html">Lee la política de privacidad</a>
+          </div>
+          <ul class="priv-list">
+            <li><b>👨‍👩‍👧 Solo para quien invitas</b><span>Lo compartido llega únicamente a las personas que aceptan tu invitación de iCloud.</span></li>
+            <li><b>🔐 Lo privado, con Face ID</b><span>Las notas personales de cada uno quedan protegidas y nunca salen de su iPhone.</span></li>
+            <li><b>📵 Sin rastreo</b><span>Ni analíticas, ni publicidad, ni datos vendidos a nadie.</span></li>
+            <li><b>🌐 Solo datos públicos</b><span>Partidos, tiempo y televisión se consultan sin enviar nada tuyo.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PREGUNTAS ============ -->
+    <section class="section" style="padding-top:0">
+      <div class="wrap faq-wrap">
+        <div class="section-head">
+          <span class="eyebrow reveal">Preguntas</span>
+          <h2 class="reveal d1">Lo que nos preguntáis.</h2>
+        </div>
+        <div class="faq">
+          <details class="reveal"><summary>¿Puedo descargarla?</summary><p>De momento no. Mi Abono nació para organizar los abonos de una familia y hoy es de uso privado. Si te interesa, escríbenos.</p></details>
+          <details class="reveal"><summary>¿Necesito crear una cuenta?</summary><p>No. Mi Abono usa tu iCloud para sincronizar y compartir, sin registros ni contraseñas nuevas.</p></details>
+          <details class="reveal"><summary>¿Cómo se reparte el abono compartido?</summary><p>Con una regla sencilla: en liga, por semana par o impar; en Champions, por día. Siempre ves la propuesta antes de aplicarla y puedes cambiar cualquier partido a mano.</p></details>
+          <details class="reveal"><summary>¿De dónde salen los partidos?</summary><p>De servicios públicos de resultados, del tiempo y de la televisión. La app solo consulta, no envía datos tuyos.</p></details>
+          <details class="reveal"><summary>¿Y si no sé usar algo?</summary><p>La app lleva un manual completo dentro, con figuras y buscador.</p></details>
+          <details class="reveal"><summary>¿Es una app oficial del club?</summary><p>No. Mi Abono es una app independiente y no está afiliada a ningún club de fútbol.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LLAMADA FINAL ============ -->
+    <section class="section" id="contacto" style="padding-top:0">
+      <div class="wrap">
+        <div class="cta reveal">
+          <img class="cta-icon" src="img/miabono-icon.png" alt="" width="120" height="120">
+          <h2>Hecha para una familia que no se pierde un partido.</h2>
+          <p>De momento, de uso privado. ¿Te gustaría algo así para tus abonos?</p>
+          <a class="btn light" data-mail-btn href="#">Escríbenos</a>
+          <span class="cta-flt f1" aria-hidden="true">⚽️</span>
+          <span class="cta-flt f2" aria-hidden="true">🎟️</span>
+          <span class="cta-flt f3" aria-hidden="true">📅</span>
+          <span class="cta-flt f4" aria-hidden="true">🏆</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow reveal">De PatuApps</span>
+          <h2 class="reveal d1">Más apps en camino.</h2>
+        </div>
+        <div class="app-grid" data-app-grid></div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-site-footer></footer>
+
+  <script src="../assets/js/apps.js"></script>
+  <script src="../assets/js/site.js"></script>
+  <script src="miabono.js"></script>
+</body>
+</html>

@@ -38,7 +38,7 @@
   // Catálogo de apps
   const grid = document.querySelector("[data-app-grid]");
   if (grid) {
-    const status = (a) => (a.status === "live" ? "Disponible" : "Muy pronto");
+    const status = (a) => ({ live: "Disponible", private: "Uso privado" })[a.status] || "Muy pronto";
     grid.innerHTML =
       P.apps
         .map(

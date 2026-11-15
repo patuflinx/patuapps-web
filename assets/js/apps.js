@@ -20,10 +20,24 @@ window.PATU = {
       accent: "#2E8B3E",
       accentSoft: "#E3F2E5",
       platforms: ["iPhone"],
-      status: "soon", // "soon" = Muy pronto · "live" = Disponible
+      status: "soon", // "soon" = Muy pronto · "live" = Disponible · "private" = Uso privado
       appStoreUrl: "", // pon aquí el enlace del App Store cuando esté publicada
+    },
+    {
+      id: "miabono",
+      name: "Mi Abono",
+      tagline: "Tu abono, bien repartido.",
+      description:
+        "Los abonos de temporada de la familia: quién va a cada partido, turnos justos, calendario, tiempo y estadísticas.",
+      icon: "miabono/img/miabono-icon.png",
+      url: "miabono/",
+      accent: "#2B53C9",
+      accentSoft: "#E5ECFF",
+      platforms: ["iPhone"],
+      status: "private", // "private" = Uso privado: escaparate, sin descarga
+      appStoreUrl: "",
     },
   ],
   // Huecos visibles en la portada para las próximas apps.
-  upcoming: 2,
+  upcoming: 1,
 };

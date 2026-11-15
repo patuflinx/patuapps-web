@@ -19,7 +19,7 @@ assets/css/site.css     Sistema de diseño común: tokens, modo oscuro, botones,
 assets/js/apps.js       Catálogo de apps (window.PATU) y correo de contacto  ← fuente única de datos
 assets/js/site.js       Pinta cabecera, pie, catálogo y animaciones a partir de apps.js
 assets/img/             Logo de PatuApps
-<app>/                  Una carpeta por app (hoy: kebuy/)
+<app>/                  Una carpeta por app (hoy: kebuy/ y miabono/)
   index.html            Página promocional
   privacidad.html       Política de privacidad (URL obligatoria en App Store Connect)
   soporte.html          Soporte (URL obligatoria en App Store Connect)
@@ -50,7 +50,7 @@ La cabecera y el pie se insertan en `<header data-site-header>` y `<footer data-
    - rehaz los textos de `index.html` para la nueva app. Puedes conservar la estructura de secciones (hero con iPhones, cinta, bento de funciones, pasos, privacidad, FAQ, CTA y «Más apps») o adaptarla;
    - reescribe `privacidad.html` y `soporte.html` según lo que haga realmente la app;
    - sustituye el contenido de `img/` (icono de 1024 px, capturas en JPG y, si tiene, ilustraciones).
-3. **Registra la app en `assets/js/apps.js`** con `id`, `name`, `tagline`, `description`, `icon`, `url`, `accent`, `accentSoft`, `platforms`, `status` (`"soon"` o `"live"`) y `appStoreUrl`.
+3. **Registra la app en `assets/js/apps.js`** con `id`, `name`, `tagline`, `description`, `icon`, `url`, `accent`, `accentSoft`, `platforms`, `status` (`"soon"`, `"live"` o `"private"` para apps de uso privado que solo se enseñan, sin descarga) y `appStoreUrl`.
    La app aparece sola en la portada, en el pie de todas las páginas y en «Más apps» de las demás.
    Baja `upcoming` en 1 para mostrar un hueco de «Próxima app» menos (mínimo 0).
 4. **Pruébala** en local, en escritorio y en móvil (ver abajo).
