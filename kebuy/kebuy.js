@@ -37,9 +37,11 @@
     es: { img: "list.jpg", word: "Plátanos", bubble: "Plátanos · De Canarias", alt: "La lista Compra semanal en español" },
     ca: { img: "list-ca.jpg", word: "Plàtans", bubble: "Plàtans · De Canàries", alt: "La llista Compra semanal en català" },
     en: { img: "list-en.jpg", word: "Bananas", bubble: "Bananas · From the Canary Islands", alt: "The Compra semanal list in English" },
+    ptbr: { img: "list-ptbr.jpg", word: "Bananas", bubble: "Bananas · Das Canárias", alt: "A lista Compra semanal em português do Brasil" },
+    ptpt: { img: "list-ptpt.jpg", word: "Bananas", bubble: "Bananas · Das Canárias", alt: "A lista Compra semanal em português de Portugal" },
     zh: { img: "list-zh.jpg", word: "香蕉", bubble: "香蕉 · 加那利产", alt: "中文版的 Compra semanal 清单" },
   };
-  const order = ["es", "ca", "en", "zh"];
+  const order = ["es", "ca", "en", "ptbr", "ptpt", "zh"];
   const img = document.querySelector("[data-lang-img]");
   const bubble = document.querySelector("[data-bubble]");
   const word = document.querySelector("[data-swap]");

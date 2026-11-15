@@ -14,7 +14,7 @@ window.PATU = {
       name: "KeBuy",
       tagline: "La lista de la compra que se comparte sola.",
       description:
-        "Listas compartidas con tu familia, un dibujo para cada producto, buscador inteligente y en cuatro idiomas.",
+        "Listas compartidas con tu familia, un dibujo para cada producto, buscador inteligente y en seis idiomas.",
       icon: "kebuy/img/kebuy-icon.png",
       url: "kebuy/",
       accent: "#2E8B3E",
