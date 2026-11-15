@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="es" data-root="../" data-app="kebuy">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KeBuy · La lista de la compra que se comparte sola</title>
+  <meta name="description" content="KeBuy es la lista de la compra para iPhone que compartes con tu familia: un dibujo para cada producto, buscador inteligente, escáner de códigos, productos privados y en cuatro idiomas.">
+  <meta property="og:title" content="KeBuy · La compra, juntos">
+  <meta property="og:description" content="La lista de la compra que se comparte sola con los tuyos.">
+  <meta property="og:image" content="img/kebuy-icon.png">
+  <meta name="theme-color" content="#2E8B3E">
+  <link rel="icon" href="img/kebuy-icon.png">
+  <link rel="apple-touch-icon" href="img/kebuy-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="kebuy.css">
+</head>
+<body>
+  <header data-site-header data-links='<a class="nav-hide" href="#funciones">Funciones</a><a class="nav-hide" href="#idiomas">Idiomas</a><a class="nav-hide" href="#privacidad">Privacidad</a><a class="btn small" href="#descargar">Descargar</a>'></header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="kb-hero">
+      <div class="blob b1" aria-hidden="true"></div>
+      <div class="blob b2" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="kb-hero-copy">
+          <div class="app-id reveal">
+            <img src="img/kebuy-icon.png" alt="" width="64" height="64">
+            <div><strong>KeBuy</strong><span>Para iPhone</span></div>
+          </div>
+          <h1 class="reveal d1">La compra,<br><span class="hl">juntos.</span></h1>
+          <p class="lead reveal d2">La lista de la compra que se comparte sola con tu familia. Cada producto con su dibujo, un buscador que te entiende y en tu idioma.</p>
+          <div class="ctas reveal d3">
+            <a class="store-badge" href="#descargar">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Zm5 3.5a.9.9 0 0 0-.8.45L8.1 13.4a.9.9 0 0 0 1.56.9l.53-.92h3.62l.53.92a.9.9 0 1 0 1.56-.9l-3.1-5.45a.9.9 0 0 0-.8-.45Zm0 2.7 1.08 1.88h-2.16L12 10.2Z"/></svg>
+              <span><small>Muy pronto en el</small><strong>App Store</strong></span>
+            </a>
+            <a class="btn ghost" href="#funciones">Ver cómo funciona</a>
+          </div>
+          <ul class="mini-proof reveal d3">
+            <li><b>≈650</b> productos con dibujo</li>
+            <li><b>4</b> idiomas</li>
+            <li><b>0</b> anuncios</li>
+          </ul>
+        </div>
+
+        <div class="kb-hero-art" aria-hidden="true">
+          <div class="phone p-back reveal d1" style="--w: clamp(200px, 24vw, 280px)"><img src="img/screens/list.jpg" alt=""></div>
+          <div class="phone p-front reveal d2" style="--w: clamp(220px, 27vw, 310px)"><img src="img/screens/home.jpg" alt=""></div>
+          <img class="flt" style="--x:-4%;--y:6%;--s:84px;--r:-12deg" src="img/ill/strawberry.svg" alt="">
+          <img class="flt" style="--x:86%;--y:2%;--s:70px;--r:10deg;animation-delay:-2s" src="img/ill/milk.svg" alt="">
+          <img class="flt" style="--x:92%;--y:52%;--s:78px;--r:-6deg;animation-delay:-4s" src="img/ill/avocado.svg" alt="">
+          <img class="flt" style="--x:-8%;--y:62%;--s:90px;--r:8deg;animation-delay:-1s" src="img/ill/bread.svg" alt="">
+          <img class="flt" style="--x:70%;--y:88%;--s:66px;--r:14deg;animation-delay:-3s" src="img/ill/cheese.svg" alt="">
+          <img class="flt" style="--x:10%;--y:92%;--s:60px;--r:-4deg;animation-delay:-5s" src="img/ill/carrot.svg" alt="">
+          <div class="toast t1"><span class="av" style="background:#ff8c3a">L</span><span><b>Laura</b> marcó <b>Pimientos</b> como comprado</span></div>
+          <div class="toast t2"><span class="ok">✓</span><span>Leche añadida a <b>Compra semanal</b></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CINTA DE PRODUCTOS ============ -->
+    <section class="ribbon" aria-label="Algunas ilustraciones de productos">
+      <div class="track" data-ribbon="0"></div>
+      <div class="track rev" data-ribbon="1"></div>
+    </section>
+
+    <!-- ============ FUNCIONES ============ -->
+    <section class="section" id="funciones">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow reveal">Funciones</span>
+          <h2 class="reveal d1">Todo lo que una lista de la compra debería hacer. <span class="muted">Y un poco más.</span></h2>
+        </div>
+
+        <div class="bento">
+          <article class="tile t-share reveal">
+            <div class="copy">
+              <span class="tag">👨‍👩‍👧 En familia</span>
+              <h3>Una lista, toda la casa al día</h3>
+              <p>Crea un grupo, invita con un enlace de iCloud y cada cambio llega al momento a los demás. Ves quién ha añadido qué, con su foto.</p>
+            </div>
+            <div class="shot"><div class="phone" style="--w: 250px"><img src="img/screens/home.jpg" alt="Pantalla de listas de KeBuy con el grupo Familia y la actividad reciente" loading="lazy"></div></div>
+          </article>
+
+          <article class="tile t-ill reveal d1">
+            <div class="copy">
+              <span class="tag">🎨 Ilustrado</span>
+              <h3>Cada producto, con su dibujo</h3>
+              <p>Reconoces la lista de un vistazo, sin leer.</p>
+            </div>
+            <div class="ill-grid" data-ill-grid></div>
+          </article>
+
+          <article class="tile t-search reveal">
+            <div class="copy">
+              <span class="tag">🔎 Buscador</span>
+              <h3>Te entiende aunque escribas rápido</h3>
+              <p>Sinónimos, erratas y variantes: escribe «tom» y te propone tomates cherry, de pera o triturado.</p>
+            </div>
+            <div class="shot crop"><img src="img/screens/search.jpg" alt="Buscador de productos mostrando variantes de tomate" loading="lazy"></div>
+          </article>
+
+          <article class="tile t-mine reveal d1">
+            <div class="copy">
+              <span class="tag">⚡ Un toque</span>
+              <h3>Tus productos de siempre, a mano</h3>
+              <p>Activa tus habituales y añádelos con un toque, sin escribir.</p>
+            </div>
+            <div class="shot crop"><img src="img/screens/myproducts.jpg" alt="Cuadrícula de productos habituales con frutas" loading="lazy"></div>
+          </article>
+
+          <article class="tile t-usual reveal d2">
+            <div class="copy">
+              <span class="tag">🧠 Memoria</span>
+              <h3>Recuerda lo que sueles comprar</h3>
+              <p>Cuántas veces, cada cuánto y en qué cantidad. Un botón rellena «lo habitual».</p>
+            </div>
+            <div class="shot crop"><img src="img/screens/product.jpg" alt="Ficha de producto de tomates con variantes y cantidad" loading="lazy"></div>
+          </article>
+
+          <article class="tile t-scan reveal">
+            <div class="copy">
+              <span class="tag">📷 Escáner</span>
+              <h3>Escanea el código de barras</h3>
+              <p>La primera vez eliges el producto; la siguiente, KeBuy ya lo reconoce.</p>
+            </div>
+            <div class="scanner" aria-hidden="true">
+              <div class="pack"><img src="img/ill/cereal.svg" alt=""><div class="barcode"></div></div>
+              <div class="laser"></div>
+            </div>
+          </article>
+
+          <article class="tile t-private reveal d1">
+            <div class="copy">
+              <span class="tag">🔒 Privado</span>
+              <h3>Lo tuyo, solo tuyo</h3>
+              <p>Marca un producto como privado y nadie más lo verá. Ni siquiera los administradores del grupo.</p>
+            </div>
+            <div class="lockrow" aria-hidden="true">
+              <div class="item"><img src="img/ill/chocolate.svg" alt=""><span>Chocolate negro</span><i>🔒</i></div>
+              <div class="item ghosted"><img src="img/ill/milk.svg" alt=""><span>Leche</span></div>
+            </div>
+          </article>
+
+          <article class="tile t-theme reveal">
+            <div class="copy">
+              <span class="tag">🌗 A tu gusto</span>
+              <h3>Nueve plantillas de color y modo oscuro</h3>
+              <p>Elige el color de acción y el tono de toda la app. De día, de noche o siempre oscura.</p>
+              <div class="swatches" aria-hidden="true">
+                <i style="background:#2E8B3E"></i><i style="background:#16A085"></i><i style="background:#1F6FE0"></i><i style="background:#E0731A"></i><i style="background:#8A3FC7"></i><i style="background:#D12F6E"></i><i style="background:#0B1417"></i>
+              </div>
+            </div>
+            <div class="duo">
+              <div class="phone" style="--w: 200px"><img src="img/screens/themes.jpg" alt="Pantalla de apariencia con plantillas de color" loading="lazy"></div>
+              <div class="phone" style="--w: 200px"><img src="img/screens/dark.jpg" alt="Lista de cumpleaños en modo oscuro" loading="lazy"></div>
+            </div>
+          </article>
+
+          <article class="tile t-offline reveal d1">
+            <div class="copy">
+              <span class="tag">📶 Sin cobertura</span>
+              <h3>Funciona en el sótano del súper</h3>
+              <p>Todo vive en tu iPhone. Los cambios se envían en cuanto vuelve la red.</p>
+            </div>
+            <div class="signal" aria-hidden="true"><i></i><i></i><i></i><i></i><b>✓</b></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ IDIOMAS ============ -->
+    <section class="section langs" id="idiomas">
+      <div class="wrap">
+        <div class="langs-grid">
+          <div>
+            <span class="eyebrow reveal">Idiomas</span>
+            <h2 class="reveal d1">Tú escribes <span style="white-space:nowrap"><span class="swap" data-swap>Plátanos</span>.</span><br>Cada uno lo lee en su idioma.</h2>
+            <p class="lead reveal d2">KeBuy habla español, català, English y 中文. Todo el catálogo está traducido, y los productos que creas tú se traducen solos en el iPhone. Una misma lista, cada persona en su idioma.</p>
+            <div class="lang-tabs reveal d3" role="tablist" aria-label="Idioma de la captura">
+              <button class="chip on" role="tab" aria-selected="true" data-lang="es">Español</button>
+              <button class="chip" role="tab" aria-selected="false" data-lang="ca">Català</button>
+              <button class="chip" role="tab" aria-selected="false" data-lang="en">English</button>
+              <button class="chip" role="tab" aria-selected="false" data-lang="zh">中文</button>
+            </div>
+          </div>
+          <div class="lang-phone reveal d1">
+            <div class="phone" style="--w: clamp(240px, 28vw, 320px)">
+              <img data-lang-img src="img/screens/list.jpg" alt="La lista Compra semanal en español">
+            </div>
+            <div class="bubble" data-bubble>Plátanos · De Canarias</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO FUNCIONA ============ -->
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head center">
+          <span class="eyebrow reveal">Cómo funciona</span>
+          <h2 class="reveal d1">Tres pasos y a comprar.</h2>
+        </div>
+        <ol class="steps">
+          <li class="reveal"><span class="n">1</span><img src="img/ill/party.svg" alt=""><h3>Crea tu grupo</h3><p>Familia, piso compartido, amigos… Invita con un enlace de iCloud.</p></li>
+          <li class="reveal d1"><span class="n">2</span><img src="img/ill/cart.svg" alt=""><h3>Añadid lo que falta</h3><p>Desde el buscador, tus habituales, una plantilla o el escáner.</p></li>
+          <li class="reveal d2"><span class="n">3</span><img src="img/ill/bag.svg" alt=""><h3>Marca y listo</h3><p>En el súper, ve tachando. Al terminar, la compra queda en el historial.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PRIVACIDAD ============ -->
+    <section class="section" id="privacidad" style="padding-top:0">
+      <div class="wrap">
+        <div class="priv reveal">
+          <div>
+            <span class="eyebrow on-dark">Privacidad</span>
+            <h2>Tus listas no son asunto nuestro.</h2>
+            <p>KeBuy no tiene servidores propios, ni cuentas, ni anuncios, ni rastreo. Tus datos viven en tu iPhone y en tu iCloud.</p>
+            <a class="btn" href="privacidad.html">Lee la política de privacidad</a>
+          </div>
+          <ul class="priv-list">
+            <li><b>🔐 Cifrado de extremo a extremo</b><span>Nombres, cantidades y notas se cifran con las claves de tu iCloud.</span></li>
+            <li><b>🙈 Productos privados</b><span>Se guardan en tu espacio privado y nunca se comparten.</span></li>
+            <li><b>📵 Sin rastreo</b><span>Ni analíticas, ni publicidad, ni datos vendidos a nadie.</span></li>
+            <li><b>📷 La cámara, solo para escanear</b><span>El reconocimiento del código se hace en el propio iPhone.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PREGUNTAS ============ -->
+    <section class="section" style="padding-top:0">
+      <div class="wrap faq-wrap">
+        <div class="section-head">
+          <span class="eyebrow reveal">Preguntas</span>
+          <h2 class="reveal d1">Lo que nos preguntáis.</h2>
+        </div>
+        <div class="faq">
+          <details class="reveal"><summary>¿Necesito crear una cuenta?</summary><p>No. KeBuy usa tu iCloud para sincronizar y compartir, así que no hay registro ni contraseñas nuevas.</p></details>
+          <details class="reveal"><summary>¿Puedo usarla sin compartir con nadie?</summary><p>Claro. Tus listas personales son solo tuyas, y puedes tener grupos o no tenerlos.</p></details>
+          <details class="reveal"><summary>¿Funciona sin internet?</summary><p>Sí. Todo funciona en el iPhone y los cambios se envían a iCloud cuando vuelve la conexión, sin perder nada.</p></details>
+          <details class="reveal"><summary>¿Los administradores del grupo pueden ver mis productos privados?</summary><p>No. Los productos privados nunca salen de tu espacio privado de iCloud, así que nadie más puede verlos.</p></details>
+          <details class="reveal"><summary>¿En qué idiomas está?</summary><p>Español, catalán, inglés y chino simplificado. Puedes cambiarlo en Perfil → Idioma.</p></details>
+          <details class="reveal"><summary>¿Cuándo sale?</summary><p>Muy pronto en el App Store. Ahora mismo está en pruebas con TestFlight.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DESCARGA ============ -->
+    <section class="section" id="descargar" style="padding-top:0">
+      <div class="wrap">
+        <div class="cta reveal">
+          <img class="cta-icon" src="img/kebuy-icon.png" alt="" width="120" height="120">
+          <h2>Haz la próxima compra con KeBuy.</h2>
+          <p>Muy pronto en el App Store para iPhone.</p>
+          <a class="store-badge light" data-store href="#descargar">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7 4h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3Zm5 3.5a.9.9 0 0 0-.8.45L8.1 13.4a.9.9 0 0 0 1.56.9l.53-.92h3.62l.53.92a.9.9 0 1 0 1.56-.9l-3.1-5.45a.9.9 0 0 0-.8-.45Zm0 2.7 1.08 1.88h-2.16L12 10.2Z"/></svg>
+            <span><small>Muy pronto en el</small><strong>App Store</strong></span>
+          </a>
+          <img class="cta-flt f1" src="img/ill/banana.svg" alt="" aria-hidden="true">
+          <img class="cta-flt f2" src="img/ill/eggs.svg" alt="" aria-hidden="true">
+          <img class="cta-flt f3" src="img/ill/coffee.svg" alt="" aria-hidden="true">
+          <img class="cta-flt f4" src="img/ill/tomato.svg" alt="" aria-hidden="true">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow reveal">De PatuApps</span>
+          <h2 class="reveal d1">Más apps en camino.</h2>
+        </div>
+        <div class="app-grid" data-app-grid></div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-site-footer></footer>
+
+  <script src="../assets/js/apps.js"></script>
+  <script src="../assets/js/site.js"></script>
+  <script src="kebuy.js"></script>
+</body>
+</html>

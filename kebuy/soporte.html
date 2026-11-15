@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es" data-root="../" data-app="kebuy">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soporte · KeBuy</title>
+  <meta name="description" content="Ayuda y contacto de KeBuy, de PatuApps.">
+  <link rel="icon" href="img/kebuy-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="kebuy.css">
+</head>
+<body>
+  <header data-site-header data-links='<a href="./">KeBuy</a><a class="nav-hide" href="privacidad.html">Privacidad</a>'></header>
+  <main class="doc">
+    <span class="eyebrow">Soporte</span>
+    <h1>¿Te echamos una mano?</h1>
+    <p class="updated">Respuestas rápidas a lo más habitual. Si no encuentras lo que buscas, escríbenos.</p>
+
+    <div class="card" style="display:flex;flex-wrap:wrap;gap:16px;align-items:center;justify-content:space-between">
+      <p><strong>Escríbenos</strong><br>Cuéntanos qué ha pasado y, si puedes, qué versión tienes (Perfil → Versión).</p>
+      <a class="btn" data-mail href="#">Enviar un correo</a>
+    </div>
+
+    <h2>Grupos y compartir</h2>
+    <details><summary>¿Cómo invito a alguien a mi grupo?</summary><p>Ve a Perfil → Mis grupos, entra en el grupo y toca «Invitar persona». Se enviará un enlace de iCloud; la otra persona solo tiene que abrirlo en su iPhone con KeBuy instalada.</p></details>
+    <details><summary>Mi invitación no llega o no se abre</summary><p>Comprobad que los dos tenéis iCloud activado en Ajustes de iOS y que KeBuy está instalada en el iPhone de la persona invitada. El enlace debe abrirse en el iPhone, no en el ordenador.</p></details>
+    <details><summary>¿Puedo limitar lo que hace cada persona en una lista?</summary><p>Sí. En la lista, toca ••• → Permisos y elige, para cada miembro, si puede ver, añadir, modificar, borrar o marcar productos.</p></details>
+
+    <h2>Productos</h2>
+    <details><summary>¿Cómo añado productos con un toque?</summary><p>Perfil → Mis productos: activa tus productos habituales por categoría. Aparecerán al añadir, listos para un toque. Mantén pulsado uno para elegir detalles y cantidad.</p></details>
+    <details><summary>¿Cómo funciona el escáner de códigos de barras?</summary><p>En Añadir producto, toca el icono del código de barras. La primera vez que escaneas un código eliges el producto; a partir de entonces KeBuy lo reconoce solo. Los códigos guardados están en Perfil → Catálogo y productos.</p></details>
+    <details><summary>¿Quién ve mis productos privados?</summary><p>Solo tú. Se guardan en tu espacio privado de iCloud y nunca se comparten con el grupo.</p></details>
+
+    <h2>Idioma y ajustes</h2>
+    <details><summary>¿Cómo cambio el idioma?</summary><p>Perfil → Idioma, o Ajustes de iOS → Apps → KeBuy → Idioma. KeBuy está en español, catalán, inglés y chino.</p></details>
+    <details><summary>Un producto que he creado sale sin traducir</summary><p>Abre su ficha y, en «Traducciones», escribe el nombre en los otros idiomas o toca «Traducir automáticamente». El catalán siempre se escribe a mano.</p></details>
+    <details><summary>¿Dónde está la despensa?</summary><p>Es opcional. Actívala en Perfil → Funciones → Despensa.</p></details>
+
+    <h2>Sincronización</h2>
+    <details><summary>Los cambios no llegan a los demás</summary><p>Mira el estado en Perfil → Sincronización con iCloud y toca «Sincronizar ahora». Sin conexión, los cambios se guardan en el iPhone y se envían cuando vuelve la red.</p></details>
+    <details><summary>¿Cómo borro todos mis datos?</summary><p>Ajustes de iOS → tu nombre → iCloud → Gestionar almacenamiento → KeBuy. Más detalles en la <a href="privacidad.html">política de privacidad</a>.</p></details>
+  </main>
+  <footer data-site-footer></footer>
+  <script src="../assets/js/apps.js"></script>
+  <script src="../assets/js/site.js"></script>
+  <script>document.querySelectorAll("[data-mail]").forEach(a => a.href = "mailto:" + PATU.contactEmail + "?subject=" + encodeURIComponent("Soporte KeBuy"));</script>
+</body>
+</html>
