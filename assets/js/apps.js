@@ -19,7 +19,7 @@ window.PATU = {
       url: "kebuy/",
       accent: "#2E8B3E",
       accentSoft: "#E3F2E5",
-      platforms: ["iPhone"],
+      platforms: ["iPhone", "Apple Watch"],
       status: "soon", // "soon" = Muy pronto · "live" = Disponible · "private" = Uso privado
       appStoreUrl: "", // pon aquí el enlace del App Store cuando esté publicada
     },
