@@ -238,3 +238,19 @@
 .k-add { background: linear-gradient(135deg, var(--km-mint), var(--surface) 70%); }
 .k-peach { background: linear-gradient(160deg, var(--km-peach), var(--surface) 70%); }
 .k-mint { background: linear-gradient(160deg, var(--km-mint), var(--surface) 70%); }
+
+
+/* Hero con capturas reales */
+.km-hero-art .phone { position: absolute; }
+.km-hero-art .p-back { left: 52%; top: 2%; transform: rotate(7deg); }
+.km-hero-art .p-front { left: 12%; top: 8%; transform: rotate(-4deg); }
+.km-hero-art .p-back.in { transform: rotate(7deg); }
+.km-hero-art .p-front.in { transform: rotate(-4deg); }
+@media (max-width: 560px) { .km-hero-art .p-front { left: 4%; } .km-hero-art .p-back { left: 40%; } }
+.km-hero-art .toast.t1 { left: -2%; top: 46%; }
+
+/* Salud */
+.km-salud { display: grid; gap: 24px; align-items: center; }
+@media (min-width: 980px) { .km-salud { grid-template-columns: 1.15fr .85fr; } }
+.km-salud-list { display: grid; gap: 20px; }
+.km-salud-art { align-items: flex-start; }

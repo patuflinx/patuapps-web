@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>KeMenjo · Come bien, a tu ritmo</title>
-  <meta name="description" content="KeMenjo es un diario de comidas para iPhone: escáner de códigos de barras, calorías que te faltan, peso con tendencia, estadísticas y tus datos en tu móvil.">
+  <meta name="description" content="KeMenjo es un diario de comidas para iPhone: escáner de códigos de barras, calorías que te faltan, peso con tendencia, estadísticas, sincronizado con Apple Salud y con tus datos exportables.">
   <meta property="og:title" content="KeMenjo · Come bien, a tu ritmo">
   <meta property="og:description" content="Diario de comidas con escáner, calorías que te faltan, peso con tendencia y estadísticas. Datos en tu iPhone.">
   <meta property="og:image" content="img/kemenjo-icon.png">
@@ -48,31 +48,8 @@
         </div>
 
         <div class="km-hero-art" aria-hidden="true">
-          <div class="km-app a1 reveal d1">
-            <h4>HOY</h4>
-            <div class="km-ringrow">
-              <div class="km-ring" style="--p:62"><span>1.140<small>kcal</small></span></div>
-              <div class="km-left"><small>Te faltan</small><b>710 kcal</b></div>
-            </div>
-            <div class="km-macros">
-              <div class="km-macro">Proteína<i style="--v:70%"></i><em>84 g</em></div>
-              <div class="km-macro">Hidratos<i style="--v:55%;--c:#f2a93b"></i><em>120 g</em></div>
-              <div class="km-macro">Grasas<i style="--v:48%;--c:#f08a24"></i><em>38 g</em></div>
-            </div>
-            <div class="km-meals">
-              <div class="km-meal">🥣 Desayuno <b>320</b></div>
-              <div class="km-meal">🥗 Comida <b>610</b></div>
-              <div class="km-meal">🍎 Snacks <b>210</b></div>
-            </div>
-          </div>
-          <div class="km-app a2 reveal d2">
-            <h4>PESO</h4>
-            <svg class="km-spark" viewBox="0 0 200 90" preserveAspectRatio="none">
-              <polyline points="0,18 20,26 40,22 60,34 80,32 100,44 120,42 140,54 160,52 180,64 200,66" fill="none" stroke="var(--accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-              <line x1="0" y1="78" x2="200" y2="78" stroke="var(--ink-3)" stroke-width="2" stroke-dasharray="6 6"/>
-            </svg>
-            <div class="km-left"><small>Tendencia · ilustración</small><b>↓ poco a poco</b></div>
-          </div>
+          <div class="phone p-back reveal d1" style="--w: clamp(200px, 24vw, 280px)"><img src="img/screens/macros.jpg" alt=""></div>
+          <div class="phone p-front reveal d2" style="--w: clamp(220px, 27vw, 310px)"><img src="img/screens/inicio.jpg" alt=""></div>
           <span class="flt" style="--x:-2%;--y:62%;--s:76px;--r:-10deg">🥑</span>
           <span class="flt" style="--x:88%;--y:6%;--s:70px;--r:10deg;animation-delay:-2s">🍎</span>
           <span class="flt" style="--x:90%;--y:80%;--s:66px;--r:-6deg;animation-delay:-4s">🥗</span>
@@ -105,6 +82,7 @@
             <div class="km-methods" aria-hidden="true">
               <span><i>📷</i>Escáner</span><span><i>🔎</i>Buscar</span><span><i>🏷️</i>Etiqueta</span><span><i>✍️</i>Describir</span><span><i>🍲</i>Receta</span>
             </div>
+            <div class="shot crop"><img src="img/screens/anadir.jpg" alt="Pantalla para añadir un alimento: escáner, búsqueda, etiqueta y descripción con texto" loading="lazy"></div>
           </article>
 
           <article class="tile k-third k-peach reveal d1">
@@ -125,10 +103,7 @@
               <h3>Tendencia, no sobresaltos</h3>
               <p>Una línea de tendencia suaviza las oscilaciones del día a día. Puedes fijar un peso objetivo y ver el mínimo saludable.</p>
             </div>
-            <svg class="km-spark" viewBox="0 0 200 90" preserveAspectRatio="none" aria-hidden="true">
-              <polyline points="0,20 20,32 40,22 60,38 80,30 100,46 120,40 140,56 160,50 180,62 200,60" fill="none" stroke="var(--accent-soft)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-              <polyline points="0,26 40,30 80,36 120,44 160,52 200,58" fill="none" stroke="var(--accent)" stroke-width="5" stroke-linecap="round"/>
-            </svg>
+            <div class="shot crop"><img src="img/screens/peso.jpg" alt="Gráfica de peso con la línea de tendencia" loading="lazy"></div>
           </article>
 
           <article class="tile k-half k-mint reveal d1">
@@ -137,12 +112,7 @@
               <h3>Esta semana contra la anterior</h3>
               <p>Calorías, macros, fibra, agua, entrenamientos y pasos, por 7 o 30 días y comparados con el periodo anterior. Con tu objetivo de pasos y la lista de lo que has entrenado.</p>
             </div>
-            <div aria-hidden="true">
-              <div class="km-chips" style="margin-bottom:14px"><span class="on">General</span><span>Calorías</span><span>Nutrientes</span><span>Macros</span><span>Ejercicio</span><span>Pasos</span></div>
-              <div class="km-bars">
-                <i class="prev" style="--h:55%"></i><i style="--h:70%"></i><i class="prev" style="--h:62%"></i><i style="--h:84%"></i><i class="prev" style="--h:48%"></i><i style="--h:66%"></i><i class="prev" style="--h:72%"></i><i style="--h:58%"></i>
-              </div>
-            </div>
+            <div class="shot crop"><img src="img/screens/pasos.jpg" alt="Estadísticas de pasos por día con objetivo y comparación con el periodo anterior" loading="lazy"></div>
           </article>
 
           <article class="tile k-half reveal">
@@ -174,7 +144,7 @@
             <div class="copy">
               <span class="tag">❤️ Apple Salud</span>
               <h3>Todo conectado</h3>
-              <p>Guarda en Salud lo que comes y bebes, y lee tu peso, tus entrenamientos y tus pasos.</p>
+              <p>Lo que comes y bebes se guarda en Salud. Tu peso, tus entrenamientos y tus pasos llegan a KeMenjo. Y puedes exportarlo todo.</p>
             </div>
           </article>
 
@@ -186,6 +156,45 @@
             </div>
             <div class="km-eye" aria-hidden="true"><span>👁</span><span style="background:none;width:auto;height:auto;display:block;color:var(--ink-2);font-weight:500"><b>Viendo a una persona</b>Solo lectura</span></div>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SALUD ============ -->
+    <section class="section" id="salud" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow reveal">Apple Salud</span>
+          <h2 class="reveal d1">Se sincroniza con Salud. <span class="muted">Y tus datos, siempre tuyos.</span></h2>
+        </div>
+        <div class="km-salud">
+          <div class="km-salud-list">
+            <article class="tile k-mint reveal">
+              <div class="copy">
+                <span class="tag">❤️ Va a Salud</span>
+                <h3>Lo que comes, también en Salud</h3>
+                <p>Cada comida que apuntas guarda en Apple Salud las calorías, las proteínas, los hidratos, las grasas y la fibra. El agua que bebes, también. Si borras una entrada en KeMenjo, se borra de Salud. Y si no lo quieres, lo desactivas con un interruptor.</p>
+              </div>
+            </article>
+            <article class="tile k-peach reveal d1">
+              <div class="copy">
+                <span class="tag">⬇️ Viene de Salud</span>
+                <h3>Importa lo que ya tienes</h3>
+                <p>Peso, altura, edad y sexo para calcular tu objetivo, y todo tu histórico de peso con un toque en «Importar de Apple Salud». Los entrenamientos suman calorías extra a tu día, y tus pasos y entrenamientos salen en las estadísticas.</p>
+              </div>
+            </article>
+            <article class="tile k-add reveal d2">
+              <div class="copy">
+                <span class="tag">⬆️ Sale de KeMenjo</span>
+                <h3>Exporta lo que comes</h3>
+                <p>Tu diario y tu peso, en CSV para abrirlos en una hoja de cálculo, o todo en un archivo JSON. Además hay copia de seguridad completa, y una copia automática cada día en la app Archivos de tu iPhone.</p>
+              </div>
+            </article>
+          </div>
+          <div class="duo km-salud-art" aria-hidden="true">
+            <div class="phone" style="--w: clamp(170px, 20vw, 230px)"><img src="img/screens/peso.jpg" alt="" loading="lazy"></div>
+            <div class="phone" style="--w: clamp(170px, 20vw, 230px)"><img src="img/screens/diario.jpg" alt="" loading="lazy"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -252,6 +261,8 @@
           <details class="reveal"><summary>¿Puedo descargarla?</summary><p>De momento no: KeMenjo es de uso privado y se prueba en un grupo reducido. Si te interesa, escríbenos.</p></details>
           <details class="reveal"><summary>¿De dónde salen los alimentos?</summary><p>De Open Food Facts, una base de datos abierta y colaborativa. Está muy bien para productos envasados, pero puede tener errores: siempre puedes corregir los valores a mano.</p></details>
           <details class="reveal"><summary>¿Necesito crear una cuenta?</summary><p>No. KeMenjo no pide correo, ni contraseña, ni registro.</p></details>
+          <details class="reveal"><summary>¿Se conecta con Apple Salud?</summary><p>Sí, si lo permites. Guarda en Salud lo que comes y bebes, y lee tu peso, tu altura, tu edad, tu sexo, tus entrenamientos y tus pasos. Puedes retirar los permisos cuando quieras desde Ajustes → Salud.</p></details>
+          <details class="reveal"><summary>¿Puedo llevarme mis datos?</summary><p>Sí. Puedes exportar el diario y el peso en CSV, o todo en JSON, y hacer copias de seguridad completas. Tus datos son tuyos.</p></details>
           <details class="reveal"><summary>¿Funciona sin internet?</summary><p>Sí. Puedes descargar una base de productos (por ejemplo, los de tus supermercados) y apuntar, buscar y escanear sin conexión.</p></details>
           <details class="reveal"><summary>¿En qué idiomas está?</summary><p>Español, catalán, inglés, portugués (Brasil y Portugal) y chino simplificado.</p></details>
           <details class="reveal"><summary>¿Sustituye a un dietista?</summary><p>No. KeMenjo es una herramienta de apoyo. Ante cualquier condición médica, consulta a tu médico o dietista.</p></details>

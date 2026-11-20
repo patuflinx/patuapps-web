@@ -6,7 +6,7 @@
     ["💧", "Contador de agua"], ["🏃", "El ejercicio suma calorías"], ["⚖️", "Peso con tendencia"],
     ["🎯", "Peso objetivo saludable"], ["📊", "Semana y mes, comparados"], ["👟", "Pasos y entrenamientos"],
     ["🏆", "Ranking de alimentos"], ["🪄", "Completa el día con sugerencias"], ["🛒", "Tus supermercados primero"],
-    ["✈️", "Base de datos sin conexión"], ["❤️", "Se guarda en Apple Salud"], ["👨‍👩‍👧", "Comparte en solo lectura"],
+    ["✈️", "Base de datos sin conexión"], ["❤️", "Se guarda en Apple Salud"], ["⬇️", "Importa tu peso de Salud"], ["⬆️", "Exporta a CSV y JSON"], ["👨‍👩‍👧", "Comparte en solo lectura"],
     ["🧩", "Widget de calorías"], ["🌗", "Modo oscuro y 8 colores"],
   ];
   document.querySelectorAll("[data-ribbon]").forEach((track) => {
