@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es" data-root="../" data-app="kemenjo">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Soporte · KeMenjo</title>
+  <meta name="description" content="Soporte de KeMenjo, de PatuApps.">
+  <link rel="icon" href="img/kemenjo-icon.png">
+  <link rel="apple-touch-icon" href="img/kemenjo-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="kemenjo.css">
+</head>
+<body>
+  <header data-site-header data-links='<a href="./">KeMenjo</a><a class="nav-hide" href="privacidad.html">Privacidad</a>'></header>
+  <main class="doc">
+    <span class="eyebrow">Soporte</span>
+    <h1>¿Te echamos una mano?</h1>
+    <p class="updated">KeMenjo · para iPhone con iOS 26 o posterior</p>
+
+    <div class="card">
+      <p><strong>Lo primero:</strong> en <em>Perfil → Ayuda</em> puedes volver a ver el tutorial y la demostración con datos ficticios. Si no resuelve tu duda, escríbenos a <a data-mail href="#"></a> y cuéntanos qué versión usas (la ves al final de <em>Perfil</em>).</p>
+    </div>
+
+    <h2>Preguntas frecuentes</h2>
+
+    <h3>No encuentro un producto</h3>
+    <p>Los productos vienen de Open Food Facts, que no lo tiene todo. Prueba a buscarlo por otro nombre o marca, a leer su etiqueta con la cámara o a describirlo con texto. También puedes crearlo a mano y quedará guardado.</p>
+
+    <h3>Los valores de un producto no son correctos</h3>
+    <p>Open Food Facts es una base colaborativa y puede tener errores. Al añadirlo, corrige los valores a mano antes de guardar.</p>
+
+    <h3>La descarga sin conexión falla o es lenta</h3>
+    <p>Comprueba que tienes conexión y vuelve a intentarlo. La descarga se hace por tandas para no saturar el servicio, así que puede tardar; la pantalla te muestra la velocidad y el tiempo restante. Si el servicio está ocupado, la app lo indica con un mensaje y puedes reanudarla más tarde.</p>
+
+    <h3>Mi objetivo de calorías me parece bajo o alto</h3>
+    <p>Puedes revisarlo en <em>Perfil → Mis datos y objetivo</em>. El objetivo nunca baja de un mínimo orientativo. Si lo necesitas, consulta a tu médico o dietista.</p>
+
+    <h3>No se guarda nada en Apple Salud</h3>
+    <p>Revisa Ajustes de iOS → Salud → Acceso a datos y dispositivos → KeMenjo y activa los permisos de lectura y escritura. En <em>Perfil → Mis datos y objetivo</em> también puedes activar o desactivar la escritura en Salud.</p>
+
+    <h3>He invitado a alguien y no ve los datos</h3>
+    <p>Comprobad que los dos tenéis iCloud activado y sesión iniciada. La otra persona debe abrir el enlace de invitación en su iPhone, con KeMenjo instalada, y después abrir <em>Perfil</em> para que se sincronice. La primera sincronización puede tardar unos minutos.</p>
+
+    <h3>¿Puedo descargarla?</h3>
+    <p>De momento es de uso privado y no está en el App Store.</p>
+
+    <h3>¿Sustituye a un médico o dietista?</h3>
+    <p>No. KeMenjo es una herramienta de apoyo y no sustituye el consejo de un profesional de la salud.</p>
+  </main>
+  <footer data-site-footer></footer>
+  <script src="../assets/js/apps.js"></script>
+  <script src="../assets/js/site.js"></script>
+  <script>document.querySelectorAll("[data-mail]").forEach(a => { a.href = "mailto:" + PATU.contactEmail; a.textContent = PATU.contactEmail; });</script>
+</body>
+</html>

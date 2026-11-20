@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="es" data-root="../" data-app="kemenjo">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KeMenjo · Come bien, a tu ritmo</title>
+  <meta name="description" content="KeMenjo es un diario de comidas para iPhone: escáner de códigos de barras, calorías que te faltan, peso con tendencia, estadísticas y tus datos en tu móvil.">
+  <meta property="og:title" content="KeMenjo · Come bien, a tu ritmo">
+  <meta property="og:description" content="Diario de comidas con escáner, calorías que te faltan, peso con tendencia y estadísticas. Datos en tu iPhone.">
+  <meta property="og:image" content="img/kemenjo-icon.png">
+  <meta name="theme-color" content="#34b05f">
+  <link rel="icon" href="img/kemenjo-icon.png">
+  <link rel="apple-touch-icon" href="img/kemenjo-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+  <link rel="stylesheet" href="kemenjo.css">
+</head>
+<body>
+  <header data-site-header data-links='<a class="nav-hide" href="#funciones">Funciones</a><a class="nav-hide" href="#seguridad">Sana y segura</a><a class="nav-hide" href="#privacidad">Privacidad</a>'></header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="km-hero">
+      <div class="blob b1" aria-hidden="true"></div>
+      <div class="blob b2" aria-hidden="true"></div>
+      <div class="wrap">
+        <div class="km-hero-copy">
+          <div class="app-id reveal">
+            <img src="img/kemenjo-icon.png" alt="" width="64" height="64">
+            <div><strong>KeMenjo</strong><span>Para iPhone</span></div>
+          </div>
+          <h1 class="reveal d1">Come bien,<br><span class="hl">a tu ritmo.</span></h1>
+          <p class="lead reveal d2">El diario de comidas que te dice cuánto te falta para hoy. Escanea, busca o describe lo que comes, y deja que la app haga las cuentas con criterio de salud.</p>
+          <div class="ctas reveal d3">
+            <span class="store-badge private" aria-label="App de uso privado">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a5 5 0 0 0-5 5v3H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-1V7a5 5 0 0 0-5-5Zm-3 5a3 3 0 1 1 6 0v3H9V7Z"/></svg>
+              <span><small>De momento</small><strong>Uso privado</strong></span>
+            </span>
+            <a class="btn ghost" href="#funciones">Ver cómo funciona</a>
+          </div>
+          <ul class="mini-proof reveal d3">
+            <li><b>0</b> cuentas</li>
+            <li><b>0</b> anuncios</li>
+            <li><b>5</b> idiomas</li>
+          </ul>
+        </div>
+
+        <div class="km-hero-art" aria-hidden="true">
+          <div class="km-app a1 reveal d1">
+            <h4>HOY</h4>
+            <div class="km-ringrow">
+              <div class="km-ring" style="--p:62"><span>1.140<small>kcal</small></span></div>
+              <div class="km-left"><small>Te faltan</small><b>710 kcal</b></div>
+            </div>
+            <div class="km-macros">
+              <div class="km-macro">Proteína<i style="--v:70%"></i><em>84 g</em></div>
+              <div class="km-macro">Hidratos<i style="--v:55%;--c:#f2a93b"></i><em>120 g</em></div>
+              <div class="km-macro">Grasas<i style="--v:48%;--c:#f08a24"></i><em>38 g</em></div>
+            </div>
+            <div class="km-meals">
+              <div class="km-meal">🥣 Desayuno <b>320</b></div>
+              <div class="km-meal">🥗 Comida <b>610</b></div>
+              <div class="km-meal">🍎 Snacks <b>210</b></div>
+            </div>
+          </div>
+          <div class="km-app a2 reveal d2">
+            <h4>PESO</h4>
+            <svg class="km-spark" viewBox="0 0 200 90" preserveAspectRatio="none">
+              <polyline points="0,18 20,26 40,22 60,34 80,32 100,44 120,42 140,54 160,52 180,64 200,66" fill="none" stroke="var(--accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+              <line x1="0" y1="78" x2="200" y2="78" stroke="var(--ink-3)" stroke-width="2" stroke-dasharray="6 6"/>
+            </svg>
+            <div class="km-left"><small>Tendencia · ilustración</small><b>↓ poco a poco</b></div>
+          </div>
+          <span class="flt" style="--x:-2%;--y:62%;--s:76px;--r:-10deg">🥑</span>
+          <span class="flt" style="--x:88%;--y:6%;--s:70px;--r:10deg;animation-delay:-2s">🍎</span>
+          <span class="flt" style="--x:90%;--y:80%;--s:66px;--r:-6deg;animation-delay:-4s">🥗</span>
+          <div class="toast t1"><span class="ok">✓</span><span>Escaneado: <b>yogur natural</b></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CINTA ============ -->
+    <section class="ribbon" aria-label="Algunas cosas que hace KeMenjo">
+      <div class="track" data-ribbon="0"></div>
+      <div class="track rev" data-ribbon="1"></div>
+    </section>
+
+    <!-- ============ FUNCIONES ============ -->
+    <section class="section" id="funciones">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow reveal">Funciones</span>
+          <h2 class="reveal d1">Apuntar lo que comes no debería llevar más de diez segundos. <span class="muted">Y entender tu progreso, tampoco.</span></h2>
+        </div>
+
+        <div class="bento">
+          <article class="tile k-wide k-add reveal">
+            <div class="copy">
+              <span class="tag">🥗 Añadir comida</span>
+              <h3>Cinco formas de apuntar, todas rápidas</h3>
+              <p>Escanea el código de barras, busca el producto, haz una foto a la etiqueta nutricional, descríbelo con texto («dos huevos y una tostada») o guarda tus propias recetas. Lo último que has usado sale primero.</p>
+            </div>
+            <div class="km-methods" aria-hidden="true">
+              <span><i>📷</i>Escáner</span><span><i>🔎</i>Buscar</span><span><i>🏷️</i>Etiqueta</span><span><i>✍️</i>Describir</span><span><i>🍲</i>Receta</span>
+            </div>
+          </article>
+
+          <article class="tile k-third k-peach reveal d1">
+            <div class="copy">
+              <span class="tag">🔥 El día</span>
+              <h3>«Te faltan…»</h3>
+              <p>Un anillo, tus calorías restantes y tus macros. El ejercicio de hoy suma calorías extra, y se ve por separado.</p>
+            </div>
+            <div class="km-ringrow" aria-hidden="true">
+              <div class="km-ring" style="--p:72"><span>72<small>%</small></span></div>
+              <div class="km-left"><small>Te faltan</small><b>540</b></div>
+            </div>
+          </article>
+
+          <article class="tile k-third reveal">
+            <div class="copy">
+              <span class="tag">⚖️ Peso</span>
+              <h3>Tendencia, no sobresaltos</h3>
+              <p>Una línea de tendencia suaviza las oscilaciones del día a día. Puedes fijar un peso objetivo y ver el mínimo saludable.</p>
+            </div>
+            <svg class="km-spark" viewBox="0 0 200 90" preserveAspectRatio="none" aria-hidden="true">
+              <polyline points="0,20 20,32 40,22 60,38 80,30 100,46 120,40 140,56 160,50 180,62 200,60" fill="none" stroke="var(--accent-soft)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+              <polyline points="0,26 40,30 80,36 120,44 160,52 200,58" fill="none" stroke="var(--accent)" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+          </article>
+
+          <article class="tile k-half k-mint reveal d1">
+            <div class="copy">
+              <span class="tag">📊 Estadísticas</span>
+              <h3>Esta semana contra la anterior</h3>
+              <p>Calorías, macros, fibra, agua, entrenamientos y pasos, por 7 o 30 días y comparados con el periodo anterior. Con tu objetivo de pasos y la lista de lo que has entrenado.</p>
+            </div>
+            <div aria-hidden="true">
+              <div class="km-chips" style="margin-bottom:14px"><span class="on">General</span><span>Calorías</span><span>Nutrientes</span><span>Macros</span><span>Ejercicio</span><span>Pasos</span></div>
+              <div class="km-bars">
+                <i class="prev" style="--h:55%"></i><i style="--h:70%"></i><i class="prev" style="--h:62%"></i><i style="--h:84%"></i><i class="prev" style="--h:48%"></i><i style="--h:66%"></i><i class="prev" style="--h:72%"></i><i style="--h:58%"></i>
+              </div>
+            </div>
+          </article>
+
+          <article class="tile k-half reveal">
+            <div class="copy">
+              <span class="tag">🪄 Completar el día</span>
+              <h3>«Me faltan 200 kcal y casi nada de proteína»</h3>
+              <p>Dile lo que te queda y KeMenjo propone alimentos tuyos y los gramos justos para cuadrarlo, sin pasarte. Un toque y se añade al diario. Además, un ranking de tus alimentos con más calorías, proteína, hidratos o grasas.</p>
+            </div>
+            <div class="km-sug" aria-hidden="true">
+              <small>Ejemplo · te quedan 180 kcal · 6 g P · 27 g H · 5 g G</small>
+              <span><b>Yogur natural</b> 125 g</span>
+              <span><b>Plátano</b> 100 g</span>
+            </div>
+          </article>
+
+          <article class="tile k-third reveal">
+            <div class="copy">
+              <span class="tag">✈️ Sin conexión</span>
+              <h3>Tu supermercado, en el bolsillo</h3>
+              <p>Elige tus supermercados y descarga miles de productos para buscar y escanear sin internet. Sus marcas salen primero.</p>
+            </div>
+            <div aria-hidden="true">
+              <div class="km-dl"><i></i></div>
+              <div class="km-dlinfo" style="margin-top:8px"><span>Descargando…</span><span>68 %</span></div>
+            </div>
+          </article>
+
+          <article class="tile k-third reveal d1">
+            <div class="copy">
+              <span class="tag">❤️ Apple Salud</span>
+              <h3>Todo conectado</h3>
+              <p>Guarda en Salud lo que comes y bebes, y lee tu peso, tus entrenamientos y tus pasos.</p>
+            </div>
+          </article>
+
+          <article class="tile k-third reveal d2">
+            <div class="copy">
+              <span class="tag">👨‍👩‍👧 En familia</span>
+              <h3>Compartir, solo para mirar</h3>
+              <p>Invita a quien quieras por iCloud: verá tu diario, tu peso y tus estadísticas, pero no podrá cambiar nada.</p>
+            </div>
+            <div class="km-eye" aria-hidden="true"><span>👁</span><span style="background:none;width:auto;height:auto;display:block;color:var(--ink-2);font-weight:500"><b>Viendo a una persona</b>Solo lectura</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SANA Y SEGURA ============ -->
+    <section class="section" id="seguridad" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head center">
+          <span class="eyebrow reveal">Sana y segura</span>
+          <h2 class="reveal d1">Pensada para cuidarte, no para castigarte.</h2>
+        </div>
+        <ol class="steps">
+          <li class="reveal"><span class="n">1</span><span class="emo">🧮</span><h3>Con criterio</h3><p>Tu objetivo se calcula con fórmulas de referencia y nunca baja de un mínimo orientativo. Si el objetivo no es perder peso, tampoco te empuja a ello.</p></li>
+          <li class="reveal d1"><span class="n">2</span><span class="emo">🧒</span><h3>Cuidado con los jóvenes</h3><p>Para menores de 18 años el ritmo es más suave, el peso objetivo no baja del mínimo saludable por edad y la app recomienda consultar a un profesional.</p></li>
+          <li class="reveal d2"><span class="n">3</span><span class="emo">💚</span><h3>Sin rojos ni culpa</h3><p>En casos como embarazo, lactancia o antecedentes con la comida, la app solo es un diario, sin objetivo numérico. Y el progreso se muestra en tono neutro.</p></li>
+        </ol>
+        <p class="reveal" style="text-align:center;color:var(--ink-3);margin-top:22px;font-size:15px">KeMenjo es una herramienta de apoyo y no sustituye el consejo de un médico o dietista.</p>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO FUNCIONA ============ -->
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head center">
+          <span class="eyebrow reveal">Cómo funciona</span>
+          <h2 class="reveal d1">Tres pasos y a comer.</h2>
+        </div>
+        <ol class="steps">
+          <li class="reveal"><span class="n">1</span><span class="emo">📝</span><h3>Cuéntanos de ti</h3><p>Edad, altura, peso, actividad y objetivo: perder, mantener, ganar músculo, subir de peso o sentirte más activo.</p></li>
+          <li class="reveal d1"><span class="n">2</span><span class="emo">📷</span><h3>Apunta lo que comes</h3><p>Escanea, busca o describe. Si no encuentras un producto, léelo de su etiqueta.</p></li>
+          <li class="reveal d2"><span class="n">3</span><span class="emo">📈</span><h3>Mira cómo vas</h3><p>El peso con tendencia y las estadísticas te enseñan lo que de verdad funciona.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ PRIVACIDAD ============ -->
+    <section class="section" id="privacidad" style="padding-top:0">
+      <div class="wrap">
+        <div class="priv reveal">
+          <div>
+            <span class="eyebrow on-dark">Privacidad</span>
+            <h2>Lo que comes es cosa tuya.</h2>
+            <p>KeMenjo no tiene servidores propios, ni cuentas, ni anuncios. Tu diario vive en tu iPhone y solo sale si tú compartes.</p>
+            <a class="btn" href="privacidad.html">Lee la política de privacidad</a>
+          </div>
+          <ul class="priv-list">
+            <li><b>📱 En tu iPhone</b><span>Diario, peso y recetas se guardan en el móvil, con copia de seguridad en Archivos.</span></li>
+            <li><b>👁 Solo a quien invitas</b><span>Compartir es por iCloud, en solo lectura, y puedes dejar de hacerlo cuando quieras.</span></li>
+            <li><b>📵 Sin rastreo</b><span>Ni analíticas, ni publicidad, ni datos vendidos a nadie.</span></li>
+            <li><b>🔎 Datos públicos</b><span>Los productos vienen de Open Food Facts: solo se consulta el código o el texto que buscas.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PREGUNTAS ============ -->
+    <section class="section" style="padding-top:0">
+      <div class="wrap faq-wrap">
+        <div class="section-head">
+          <span class="eyebrow reveal">Preguntas</span>
+          <h2 class="reveal d1">Lo que nos preguntáis.</h2>
+        </div>
+        <div class="faq">
+          <details class="reveal"><summary>¿Puedo descargarla?</summary><p>De momento no: KeMenjo es de uso privado y se prueba en un grupo reducido. Si te interesa, escríbenos.</p></details>
+          <details class="reveal"><summary>¿De dónde salen los alimentos?</summary><p>De Open Food Facts, una base de datos abierta y colaborativa. Está muy bien para productos envasados, pero puede tener errores: siempre puedes corregir los valores a mano.</p></details>
+          <details class="reveal"><summary>¿Necesito crear una cuenta?</summary><p>No. KeMenjo no pide correo, ni contraseña, ni registro.</p></details>
+          <details class="reveal"><summary>¿Funciona sin internet?</summary><p>Sí. Puedes descargar una base de productos (por ejemplo, los de tus supermercados) y apuntar, buscar y escanear sin conexión.</p></details>
+          <details class="reveal"><summary>¿En qué idiomas está?</summary><p>Español, catalán, inglés, portugués (Brasil y Portugal) y chino simplificado.</p></details>
+          <details class="reveal"><summary>¿Sustituye a un dietista?</summary><p>No. KeMenjo es una herramienta de apoyo. Ante cualquier condición médica, consulta a tu médico o dietista.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LLAMADA FINAL ============ -->
+    <section class="section" id="contacto" style="padding-top:0">
+      <div class="wrap">
+        <div class="cta reveal">
+          <img class="cta-icon" src="img/kemenjo-icon.png" alt="" width="120" height="120">
+          <h2>Comer bien, sin complicarte la vida.</h2>
+          <p>De momento, de uso privado. ¿Te gustaría probarla?</p>
+          <a class="btn light" data-mail-btn href="#">Escríbenos</a>
+          <span class="cta-flt f1" aria-hidden="true">🥑</span>
+          <span class="cta-flt f2" aria-hidden="true">🍎</span>
+          <span class="cta-flt f3" aria-hidden="true">🥗</span>
+          <span class="cta-flt f4" aria-hidden="true">💧</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow reveal">De PatuApps</span>
+          <h2 class="reveal d1">Más apps en camino.</h2>
+        </div>
+        <div class="app-grid" data-app-grid></div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-site-footer></footer>
+
+  <script src="../assets/js/apps.js"></script>
+  <script src="../assets/js/site.js"></script>
+  <script src="kemenjo.js"></script>
+</body>
+</html>

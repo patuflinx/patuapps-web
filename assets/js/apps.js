@@ -37,6 +37,20 @@ window.PATU = {
       status: "private", // "private" = Uso privado: escaparate, sin descarga
       appStoreUrl: "",
     },
+    {
+      id: "kemenjo",
+      name: "KeMenjo",
+      tagline: "Come bien, a tu ritmo.",
+      description:
+        "Diario de comidas con escáner, calorías que te faltan, peso con tendencia y estadísticas. Tus datos, en tu iPhone.",
+      icon: "kemenjo/img/kemenjo-icon.png",
+      url: "kemenjo/",
+      accent: "#34B05F",
+      accentSoft: "#E3F6EA",
+      platforms: ["iPhone"],
+      status: "private", // "private" = Uso privado: escaparate, sin descarga
+      appStoreUrl: "",
+    },
   ],
   // Huecos visibles en la portada para las próximas apps.
   upcoming: 1,
