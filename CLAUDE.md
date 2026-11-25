@@ -9,7 +9,7 @@ Esta guía es para poder ampliarla sin contexto previo.
 - Publicada con GitHub Pages en https://patuflinx.github.io/patuapps-web/. Cada `git push` a `main` la actualiza en uno o dos minutos.
 - Idioma de la web: español.
 - Tecnología: HTML, CSS y JS estáticos. No hay dependencias, `npm` ni paso de compilación.
-- Proyecto de KeBuy (la app): `../KeBuy`. Proyecto de KeMenjo: `../KeMenjo`.
+- Proyecto de KeBuy (la app): `../KeBuy`. Proyecto de KeMenjo: `../KeMenjo`. Proyecto de Mi Eléctrico: `../Mi Electrico`.
 
 ## Estructura
 
@@ -19,7 +19,7 @@ assets/css/site.css     Sistema de diseño común: tokens, modo oscuro, botones,
 assets/js/apps.js       Catálogo de apps (window.PATU) y correo de contacto  ← fuente única de datos
 assets/js/site.js       Pinta cabecera, pie, catálogo y animaciones a partir de apps.js
 assets/img/             Logo de PatuApps
-<app>/                  Una carpeta por app (hoy: kebuy/, miabono/ y kemenjo/)
+<app>/                  Una carpeta por app (hoy: kebuy/, miabono/, kemenjo/ y mielectrico/)
   index.html            Página promocional
   privacidad.html       Política de privacidad (URL obligatoria en App Store Connect)
   soporte.html          Soporte (URL obligatoria en App Store Connect)

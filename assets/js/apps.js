@@ -51,6 +51,20 @@ window.PATU = {
       status: "private", // "private" = Uso privado: escaparate, sin descarga
       appStoreUrl: "",
     },
+    {
+      id: "mielectrico",
+      name: "Mi Eléctrico",
+      tagline: "Tu eléctrico, bajo control.",
+      description:
+        "El cuaderno de tu coche eléctrico: limpiezas, mantenimiento, neumáticos, electricidad, ahorro y estadísticas. Tus datos, en tu iPhone.",
+      icon: "mielectrico/img/mielectrico-icon.png",
+      url: "mielectrico/",
+      accent: "#2F7BFF",
+      accentSoft: "#E3EEFF",
+      platforms: ["iPhone"],
+      status: "private", // "private" = Uso privado: escaparate, sin descarga
+      appStoreUrl: "",
+    },
   ],
   // Huecos visibles en la portada para las próximas apps.
   upcoming: 1,
