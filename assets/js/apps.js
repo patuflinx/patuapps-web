@@ -48,7 +48,7 @@ window.PATU = {
       accent: "#34B05F",
       accentSoft: "#E3F6EA",
       platforms: ["iPhone"],
-      status: "private", // "private" = Uso privado: escaparate, sin descarga
+      status: "soon", // "soon" = Muy pronto · "live" = Disponible · "private" = Uso privado
       appStoreUrl: "",
     },
     {
@@ -62,7 +62,7 @@ window.PATU = {
       accent: "#2F7BFF",
       accentSoft: "#E3EEFF",
       platforms: ["iPhone"],
-      status: "private", // "private" = Uso privado: escaparate, sin descarga
+      status: "soon", // "soon" = Muy pronto · "live" = Disponible · "private" = Uso privado
       appStoreUrl: "",
     },
   ],
