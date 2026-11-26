@@ -89,6 +89,9 @@
   .t-scan, .t-private { grid-column: span 3; }
   .t-theme { grid-column: span 4; grid-template-columns: 1fr auto; align-items: center; }
   .t-offline { grid-column: span 2; }
+  .t-stats { grid-column: span 6; grid-template-columns: 1fr auto; align-items: end; column-gap: 32px; }
+  .t-stats .shot.crop { margin-left: 0; width: 340px; }
+  .t-stats .copy { align-self: center; max-width: 520px; }
 }
 .t-share .shot .phone { transform: rotate(4deg); }
 
@@ -121,6 +124,7 @@
 @media (max-width: 520px) { .duo .phone { --w: 150px !important; } }
 
 .t-offline { background: linear-gradient(160deg, #e4eeff, var(--surface) 70%); }
+.t-stats { background: linear-gradient(135deg, var(--kb-mint), var(--surface) 70%); }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .t-offline { background: linear-gradient(160deg, #172234, var(--surface) 70%); } }
 .signal { display: flex; align-items: flex-end; gap: 8px; height: 90px; justify-content: center; position: relative; }
 .signal i { width: 18px; border-radius: 6px; background: var(--line); }
